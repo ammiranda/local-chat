@@ -4,6 +4,9 @@ import json
 from flask import Flask, request, jsonify, send_file
 import logging
 from logging.handlers import RotatingFileHandler
+from dotenv import load_dotenv
+
+load_dotenv()
 
 openai.api_key = os.environ["OPENAI_KEY"]
 MODEL = "gpt-3.5-turbo"
