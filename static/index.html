@@ -146,7 +146,7 @@ main {
                         $('.loading').remove();
                         $('#prompt').prop('disabled', false).val('').focus()
                         clearInterval(loader);
-                        let err = $('<p class="error">Oops, something went wrong 😢. Please ping your dad or try reloading this page.<p>');
+                        let err = $('<p class="error">Oops, something went wrong. Try reloading this page.<p>');
                         $('#content').append(err);
                     }
                 });
