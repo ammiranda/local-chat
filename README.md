@@ -1,13 +1,7 @@
 # Local Chat
 
-This simple app primes ChatGPT to talk with the kid:
+This simple app that sets up a web interface to send messages to ChatGPT.
 
-```
-You are a helpful assistant. The user is a XX years old named Xxxx. 
-She is smart and curious. Please provide child appropriate answers only.
-```
-
-[chat demo](https://user-images.githubusercontent.com/225407/227846919-982b8173-6c62-4d25-a139-cad5a5961c0e.webm)
 
 ## How to use
 
@@ -22,6 +16,8 @@ Make sure you have registered an OpenAI access key: https://platform.openai.com/
 ```
 export OPENAI_KEY=<your-key>
 ```
+
+You can also populate the OpenAI access key in a `.env` file at the root of this repository which will be read on server start up.
 
 Edit the [app.py](app.py) file and adjust the `MAIN_PROMPT` according to your needs.
 
@@ -39,5 +35,4 @@ The code is licensed under MIT.
 
 ## Warnings
 
-Use at your own risk. The app is opening the door to a very powerful AI for your kid. 
-It might be a good idea to supervise the kid while using the app, and make sure they understand that not all answers are real here.
+Use at your own risk. Do not assume responses are truthful.
